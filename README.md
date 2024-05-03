@@ -1,1 +1,1 @@
-# -hcl
+# Website for the HC Limmat handball club in Zurich

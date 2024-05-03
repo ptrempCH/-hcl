@@ -1,0 +1,105 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+    width: 95%;
+    top: 0;
+
+    div {
+        display: flex;
+        background-color: red;
+        padding: 1rem;
+        margin: 1rem;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            width: 50%;
+            color: white;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+header + section {
+    margin-top: 12rem;
+}
+
+section {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+    background-color: lightgray;
+    position: relative;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    padding: 1rem;
+
+    .card_actions {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+
+        li {
+            padding-top: 1rem;
+
+            a {
+                color: red;
+                text-decoration: none;
+            }
+        }
+
+        :hover {
+            background-color: white;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: lightgray;
+    color: white;
+    text-align: right;
+
+    ul {
+        list-style: none;
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+    }
+}
+
+#curator-feed-default-feed-layout .crt-logo.crt-tag {
+    display: none;
+}
